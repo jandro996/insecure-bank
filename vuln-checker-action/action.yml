@@ -1,0 +1,6 @@
+# action.yml
+name: 'Hdiv Vulnerability Checker'
+description: 'Check for vulnearabilities with Hdiv Agent'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
