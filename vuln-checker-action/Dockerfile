@@ -1,8 +1,8 @@
-# Imagen del contenedor que ejecuta tu código
-FROM alpine:3.10
-
-# Copias tu archivo de código de tu repositorio de acción a la ruta `/`del contenedor
-COPY entrypoint.sh /entrypoint.sh
-
-# Archivo del código a ejecutar cuando comienza el contedor del docker (`entrypoint.sh`)
-ENTRYPOINT ["bash", "/entrypoint.sh"]
+# we will use openjdk 8 with alpine as it is a very small linux distro
+FROM openjdk:8-jre-alpine3.9
+ 
+# copy the packaged jar file into our docker image
+COPY hdiv-vuln-checker-0.1.0.jar /hdiv-vuln-checker-0.1.0.jar
+ 
+# set the startup command to execute the jar
+CMD ["java", "-jar", "/hdiv-vuln-checker-0.1.0.jar"]
