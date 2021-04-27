@@ -1,8 +1,0 @@
-# action.yml
-name: 'Hdiv Vuln Checker'
-description: 'Find vulnearbilities'
-runs:
-  using: 'composite'
-  steps:
-    - run: docker-compose up
-      shell: bash
