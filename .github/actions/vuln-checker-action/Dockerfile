@@ -1,8 +1,6 @@
 # we will use openjdk 8 with alpine as it is a very small linux distro
 FROM openjdk:8-jre-alpine3.9
 
-RUN ls
- 
 # copy the packaged jar file into our docker image
 COPY hdiv-vuln-checker-0.1.0.jar /hdiv-vuln-checker-0.1.0.jar
  
