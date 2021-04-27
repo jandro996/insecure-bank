@@ -8,7 +8,7 @@ runs:
       shell: bash
     - run: echo "The workflow is now ready to test your code on the runner."
       shell: bash
-    - run: ls ${{ github.workspace }}
+    - run: ls -al
       shell: bash
     - run: docker-compose up -d
       shell: bash
