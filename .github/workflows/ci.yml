@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Copy test agent log
-        run: cp ./.github/workflows/hdivAgentLog.hlg ${{github.workspace}}
+        run: cp ./.github/workflows/hdivAgentLog.hlg.gz ${{github.workspace}}
       - name: Hdiv vulnerabilities check step
         uses: ./.github/actions/vuln-checker-action
         id: hdiv_vuln_checker
