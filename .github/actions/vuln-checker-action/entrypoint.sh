@@ -1,7 +1,6 @@
 #!/bin/sh -l
 
-
-echo ls
+ls
 
 java -jar hdiv-vuln-checker-0.1.0.jar
 
