@@ -3,4 +3,4 @@ name: 'Hdiv Vuln Checker'
 description: 'Find vulnearbilities'
 runs:
   using: 'docker'
-  image: '.github/actions/vuln-checker-action/Dockerfile'
+  image: './.github/actions/vuln-checker-action/Dockerfile'
