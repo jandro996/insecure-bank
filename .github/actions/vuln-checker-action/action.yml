@@ -4,11 +4,9 @@ description: 'Find vulnearbilities'
 runs:
   using: 'composite'
   steps:
-    - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
+    - run: echo "Show files"
       shell: bash
-    - run: echo "The workflow is now ready to test your code on the runner."
-      shell: bash
-    - run: ls -al
+    - run: ls -al .github/actions/vuln-checker-action
       shell: bash
     - run: docker-compose up -d
       shell: bash
