@@ -6,6 +6,6 @@ COPY hdiv-vuln-checker-0.1.0.jar /hdiv-vuln-checker-0.1.0.jar
 COPY entrypoint.sh /entrypoint.sh
  
 # set the startup command to execute the jar
-#CMD ["java", "-jar", "/hdiv-vuln-checker-0.1.0.jar"]
+CMD ["java", "-jar", "/hdiv-vuln-checker-0.1.0.jar"]
 RUN chmod +x entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
