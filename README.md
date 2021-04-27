@@ -31,4 +31,4 @@ Open the application in > http://localhost:8080/insecure-bank
 
 ## STATUS
 
-(https://github.com/jandro996/insecure-bank/actions/workflows/ci.yml/badge.svg)
+![ci](https://github.com/jandro996/insecure-bank/actions/workflows/ci.yml/badge.svg)
