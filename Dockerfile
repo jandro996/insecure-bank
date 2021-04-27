@@ -1,19 +1,8 @@
-FROM tomcat:8.0-jre8
-MAINTAINER Hdiv Security
-
-# Copy the application to tomcat
-ADD target/insecure-bank.war /usr/local/tomcat/webapps
-
-# Copy the license file
-ADD license.hdiv /usr/local/tomcat/hdiv/
-
-# Copy the agent jar
-ADD hdiv-ee-agent.jar /usr/local/tomcat/hdiv/
-
-# Run Tomcat and enjoy!
-CMD export JAVA_OPTS="-javaagent:hdiv/hdiv-ee-agent.jar \
-  -Dhdiv.config.dir=hdiv/ \
-  -Dhdiv.console.url=http://console:8080/hdiv-console-services \
-  -Dhdiv.console.token=04db250da579302ca273a958 \
-  -Dhdiv.server.name=Testing-Docker \
-  -Dhdiv.toolbar.enabled=true" && catalina.sh run
+# we will use openjdk 8 with alpine as it is a very small linux distro
+FROM openjdk:8-jre-alpine3.9
+ 
+# copy the packaged jar file into our docker image
+COPY hdiv-vuln-checker-0.1.0.jar /hdiv-vuln-checker-0.1.0.jar
+ 
+# set the startup command to execute the jar
+CMD ["java", "-jar", "/hdiv-vuln-checker-0.1.0.jar"]
