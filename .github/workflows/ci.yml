@@ -23,3 +23,6 @@ jobs:
           hdiv.build.init: "1590616800000"
           hdiv.build.end: "1690616800000"
           hdiv.resource.folder: "."
+          hdiv.application.name: "spring-test-case"
+          hdiv.application.version: "3.0.0"
+          hdiv.triggers: '[{"count":0,"severity":"HIGH"}]'
