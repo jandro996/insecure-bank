@@ -26,3 +26,8 @@ jobs:
           hdiv.application.name: "spring-test-case"
           hdiv.application.version: "3.0.0"
           hdiv.triggers: '[{"count":0,"severity":"HIGH"}]'
+      - name: Archive vulnerabilities results
+        uses: actions/upload-artifact@v2
+        with:
+          name: hdiv-vuln-report
+          path: vuln-checker-output.json
