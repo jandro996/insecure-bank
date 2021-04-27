@@ -8,5 +8,7 @@ runs:
       shell: bash
     - run: ls -al .github/actions/vuln-checker-action
       shell: bash
+    - run: less .gitignore
+      shell: bash
     - run: docker-compose up -d
       shell: bash
