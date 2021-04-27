@@ -6,7 +6,7 @@ jobs:
     name: Hdiv vulnerabilities check
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
       - name: Hdiv vulnerabilities check step
         uses: ./.github/actions/vuln-checker-action
         id: hdiv_vuln_checker
