@@ -20,3 +20,4 @@ jobs:
         env:
           hdiv.build.init: "1590616800000"
           hdiv.build.end: "1690616800000"
+          hdiv.resource.folder: "/mnt/data"
