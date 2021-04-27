@@ -4,5 +4,5 @@ description: 'Find vulnearbilities'
 runs:
   using: 'composite'
   steps:
-    - run: docker-compose up -d
+    - run: .github/actions/vuln-checker-action/docker-compose up -d
       shell: bash
