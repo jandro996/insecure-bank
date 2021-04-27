@@ -1,6 +1,7 @@
 # action.yml
 name: 'Hdiv Vuln Checker'
-description: 'Find vulnearbilities in code'
+description: 'Find vulnearbilities'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: 'composite'
+  steps:
+    - run: docker-compose up
