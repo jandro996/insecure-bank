@@ -17,3 +17,6 @@ jobs:
       - name: Hdiv vulnerabilities check step
         uses: ./.github/actions/vuln-checker-action
         id: hdiv_vuln_checker
+        env:
+          hdiv.build.init: "1590616800000"
+          hdiv.build.end: "1690616800000"
