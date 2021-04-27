@@ -1,5 +1,8 @@
 #!/bin/sh -l
 
+
+echo ls
+
 java -jar hdiv-vuln-checker-0.1.0.jar
 
 time=$(date)
