@@ -31,10 +31,10 @@ jobs:
       - name: Archive vulnerabilities json
         uses: actions/upload-artifact@v2
         with:
-          name: hdiv-vuln-report-json
+          name: hdiv-vuln-output-json
           path: vuln-checker-output.json
       - name: Archive vulnerabilities report
         uses: actions/upload-artifact@v2
         with:
           name: hdiv-vuln-report-html
-          path: vuln-checker-output.html
+          path: vuln-checker-report.html
