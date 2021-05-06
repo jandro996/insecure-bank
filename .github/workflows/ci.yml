@@ -25,7 +25,7 @@ jobs:
           hdiv.resource.folder: "."
           #hdiv.application.name: "spring-test-case"
           #hdiv.application.version: "3.0.0"
-          #hdiv.triggers: '[{"count":0,"severity":"HIGH"}]'
+          hdiv.triggers: '[{"count":0,"severity":"HIGH"}]'
      # - name: Get the output time
      #   run: echo "The time was ${{ steps.hdiv_vuln_checker.outputs.time }}"
       - name: Archive vulnerabilities json
