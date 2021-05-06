@@ -28,8 +28,13 @@ jobs:
           #hdiv.triggers: '[{"count":0,"severity":"HIGH"}]'
      # - name: Get the output time
      #   run: echo "The time was ${{ steps.hdiv_vuln_checker.outputs.time }}"
-      - name: Archive vulnerabilities results
+      - name: Archive vulnerabilities json
         uses: actions/upload-artifact@v2
         with:
-          name: hdiv-vuln-report
+          name: hdiv-vuln-report-json
           path: vuln-checker-output.json
+      - name: Archive vulnerabilities report
+        uses: actions/upload-artifact@v2
+        with:
+          name: hdiv-vuln-report-html
+          path: vuln-checker-output.html
