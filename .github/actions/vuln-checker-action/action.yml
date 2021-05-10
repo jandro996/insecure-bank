@@ -3,4 +3,4 @@ name: 'Hdiv Vuln Checker'
 description: 'Find vulnearbilities'
 runs:
   using: 'docker'
-  image: artifacts.hdivsecurity.com/plugins/vulnerability-check:0.1.0
+  image: docker://artifacts.hdivsecurity.com/plugins/vulnerability-check:0.1.0
